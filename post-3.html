@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A/B testing: doing it right vs doing it fast · Aron Henriquez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">aron<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../experience.html">Experience</a></li>
+        <li><a href="../blog.html" class="active">Blog</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="post-body" style="padding-top: calc(var(--nav-h) + 3rem);">
+    <a href="../blog.html" class="back-link">← Back to blog</a>
+
+    <div class="post-meta">
+      <span class="blog-tag">Data</span>
+      <span class="post-date">March 2025 · 5 min read</span>
+    </div>
+
+    <h1 style="font-family: var(--font-display); font-size: clamp(2rem, 4vw, 2.8rem); color: var(--gray-900); line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 1.5rem;">
+      A/B testing: doing it right vs doing it fast
+    </h1>
+
+    <p style="font-size: 1.1rem; color: var(--gray-500); line-height: 1.75; margin-bottom: 2.5rem; border-left: 3px solid var(--blue-300); padding-left: 1.25rem;">
+      How to design experiments that give you real, actionable answers — not just numbers that look good in a presentation but teach you nothing.
+    </p>
+
+    <h2>The testing culture problem</h2>
+    <p>
+      Almost every marketing team I've worked with or talked to claims they "do A/B testing." And they do — technically. They split audiences, they compare variants, they look at which one performed better.
+    </p>
+    <p>
+      But very few of them are actually learning anything. They're generating results, not insights. And there's a big difference.
+    </p>
+
+    <h2>Why most tests don't teach you anything</h2>
+    <p>
+      Here are the patterns I see most often:
+    </p>
+    <ul>
+      <li><strong>Testing too many things at once.</strong> If you change the subject line, the CTA, and the send time simultaneously, you don't know which change drove the result.</li>
+      <li><strong>Stopping too early.</strong> The test "wins" after two days with a 52% vs 48% open rate. That's not statistically significant — it's noise.</li>
+      <li><strong>Optimizing for the wrong metric.</strong> A higher open rate doesn't always mean better performance. If your goal is conversion, measure conversion.</li>
+      <li><strong>Testing without a hypothesis.</strong> If you don't know what you're trying to learn before you start, you'll rationalize any result after the fact.</li>
+    </ul>
+
+    <h2>The one rule that changes everything</h2>
+    <p>
+      Start with a hypothesis. Not "let's test two subject lines and see what wins" — that's not a hypothesis, that's a coin flip with more steps. A real hypothesis sounds like: "We believe that using the user's first name in the subject line will increase open rates because it feels more personal and relevant in a crowded inbox."
+    </p>
+    <p>
+      When you have a hypothesis, you know what you're testing and why. You can design the test properly. And when you have results, you can actually interpret them — not just declare a winner.
+    </p>
+
+    <h2>Statistical significance isn't optional</h2>
+    <p>
+      I know it sounds tedious, but this is the thing that separates real testing from theater. Before you run a test, decide:
+    </p>
+    <ul>
+      <li>What's your minimum detectable effect? (How big does the difference need to be to actually matter to your business?)</li>
+      <li>What's your required confidence level? (Typically 95% — meaning you'd only see this result by chance 5% of the time.)</li>
+      <li>What sample size do you need to reach statistical significance at those levels?</li>
+    </ul>
+    <p>
+      Run the test until you hit that sample size. Not until Monday. Not until the end of the week. Until the math says you can trust the result.
+    </p>
+
+    <h2>Build a learning library</h2>
+    <p>
+      The best CRM teams I know treat their test results like a library. Every test gets documented: the hypothesis, the setup, the results, the interpretation, and what was done with the finding.
+    </p>
+    <p>
+      Over time, this becomes one of the most valuable assets in your marketing operation. You stop re-learning the same lessons. You build on what worked. And when someone asks "why do we do it this way?", you have an actual answer.
+    </p>
+
+    <div style="margin-top: 3rem; padding: 1.75rem; background: var(--blue-50); border: 1px solid var(--blue-100); border-radius: var(--radius-lg);">
+      <p style="font-size: 0.875rem; color: var(--gray-700); margin: 0; line-height: 1.7;">
+        <strong>Disagree with any of this?</strong> Good — I'd love to hear a different perspective. Find me on <a href="https://www.linkedin.com/in/aronhenriquez-crm-lifecycle/" target="_blank" rel="noopener" style="color: var(--blue-500); font-weight: 600;">LinkedIn</a>.
+      </p>
+    </div>
+
+    <div style="margin-top: 2.5rem; padding-top: 2.5rem; border-top: 1px solid var(--gray-200); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+      <a href="post-2.html" class="back-link">← Previous post</a>
+      <a href="../blog.html" style="font-size: 0.875rem; font-weight: 600; color: var(--blue-500);">All posts →</a>
+    </div>
+  </div>
+
+  <footer class="footer" style="margin-top: 4rem;">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <a href="../index.html" class="nav-logo">aron<span>.</span></a>
+          <p>CRM &amp; Lifecycle Marketing · Rio de Janeiro, Brazil</p>
+        </div>
+        <div class="footer-links">
+          <a href="../about.html">About</a>
+          <a href="../experience.html">Experience</a>
+          <a href="../blog.html">Blog</a>
+          <a href="https://www.linkedin.com/in/aronhenriquez-crm-lifecycle/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Aron Henriquez</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
