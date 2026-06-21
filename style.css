@@ -324,11 +324,54 @@ ul { list-style: none; }
   gap: 0.5rem;
 }
 
+/* ===== WORK + STACK SPLIT ===== */
+.work-stack {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.work-stack__right {
+  position: sticky;
+  top: 6rem;
+}
+
+.stack-logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.stack-logo-tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  color: var(--slate);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.stack-logo-tile:hover {
+  border-color: var(--azure);
+  color: var(--azure);
+  box-shadow: 0 2px 12px rgba(28, 100, 232, 0.08);
+}
+
 /* ===== PILLARS (How I Work) ===== */
 .pillars {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 
 .pillar__accent {
@@ -679,7 +722,8 @@ textarea.input {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
-  .pillars { grid-template-columns: 1fr; gap: 2rem; }
+  .work-stack { grid-template-columns: 1fr; gap: 3rem; }
+  .work-stack__right { position: static; }
   .case-full__narrative { grid-template-columns: 1fr; gap: 1.5rem; }
   .contact { grid-template-columns: 1fr; gap: 3rem; }
 }
