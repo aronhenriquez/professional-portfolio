@@ -1,258 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aron Henriquez · CRM & Lifecycle Marketing</title>
-  <meta name="description" content="Senior CRM & Lifecycle Marketing Analyst with 7+ years in tech companies across Latin America." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aron Henriquez — CRM & Lifecycle Marketing</title>
+  <meta name="description" content="Data-driven CRM and Lifecycle Marketing strategy. Braze, Amplitude, and statistically rigorous A/B testing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- NAV -->
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">aron<span>.</span></a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__diamond"></span>
+        Aron Henriquez
+      </a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
+      <div class="nav__links">
+        <a href="cases.html">Cases</a>
+        <a href="blog.html">Writing</a>
+        <a href="#contact" class="btn btn--outline">Contact</a>
+      </div>
     </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-bg-grid"></div>
-    <div class="hero-content">
-      <div class="hero-eyebrow">
-        <span class="dot"></span> Available for new opportunities
-      </div>
-      <h1 class="hero-title">
-        Hi, I'm <em>Aron</em>.<br />
-        I grow businesses<br />through CRM &amp; data.
-      </h1>
-      <p class="hero-sub">
-        Senior CRM &amp; Lifecycle Marketing Analyst with 7+ years of experience at tech companies across Latin America — building automations, campaigns, and strategies that actually move the needle.
-      </p>
-      <div class="hero-cta">
-        <a href="experience.html" class="btn btn-primary">See my experience</a>
-        <a href="about.html" class="btn btn-ghost">About me</a>
-      </div>
-      <div class="hero-links">
-        <a href="https://www.linkedin.com/in/aronhenriquez-crm-lifecycle/" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          LinkedIn
-        </a>
-        <a href="https://www.datacamp.com/portfolio/aronhenriquez" target="_blank" rel="noopener" aria-label="DataCamp">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          DataCamp
-        </a>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="hero-card">
-        <div class="card-label">Current Role</div>
-        <div class="card-title">Senior CRM &amp; Lifecycle Analyst</div>
-        <div class="card-company">Beyond Analytics / Afya · Brazil</div>
-        <div class="card-tags">
-          <span>Iterable</span>
-          <span>Braze</span>
-          <span>HubSpot</span>
-          <span>Amplitude</span>
-        </div>
-      </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <span class="stat-num">7+</span>
-          <span class="stat-label">Years in tech</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">4+</span>
-          <span class="stat-label">Years in CRM</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num">4</span>
-          <span class="stat-label">LatAm markets</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS STRIP -->
-  <section class="skills-strip">
     <div class="container">
-      <p class="strip-label">Tools &amp; platforms I work with</p>
-      <div class="tools-grid">
-        <span>Iterable</span>
-        <span>Braze</span>
-        <span>HubSpot</span>
-        <span>Insider</span>
-        <span>Segment</span>
-        <span>Amplitude</span>
-        <span>Blip</span>
-        <span>Sinch</span>
-        <span>User.com</span>
-        <span>Metabase</span>
-        <span>Power BI</span>
-        <span>SQL</span>
+      <p class="label hero__eyebrow">CRM & Lifecycle Marketing &middot; 7+ Years in Tech</p>
+      <h1 class="display hero__headline">Customer data,<br>turned into <em>lifecycle<br>growth</em>.</h1>
+      <p class="hero__sub">For over 7 years I've worked at the intersection of data and communication. The last 4 have been spent specializing in CRM and Lifecycle Marketing — building automations, testing hypotheses, and turning user behavior into retention and revenue, with Braze, Amplitude, and statistical rigor.</p>
+      <div class="hero__ctas">
+        <a href="cases.html" class="btn btn--primary">View case studies &rarr;</a>
+        <a href="#" class="btn btn--outline-light">Download r&eacute;sum&eacute;</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat">
+          <div class="stat__number">4+</div>
+          <div class="stat__label">years focused on CRM<br>& Lifecycle Marketing</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">R$3.8M</div>
+          <div class="stat__label">generated in CRM revenue<br>through automation, in a single year</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">50+</div>
+          <div class="stat__label">automated flows designed,<br>tested, and shipped</div>
+        </div>
+      </div>
+      <div class="hero__bar">
+        <span>Brazil</span>
+        <span>/</span>
+        <span>CRM + Lifecycle</span>
+        <span>/</span>
+        <span>Braze &middot; Amplitude &middot; SQL</span>
+        <span>/</span>
+        <span>EN &middot; PT</span>
       </div>
     </div>
   </section>
 
-  <!-- WHAT I DO -->
+  <!-- HOW I WORK -->
   <section class="section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Expertise</span>
-        <h2>What I do best</h2>
-        <p>My work lives at the intersection of data, marketing strategy, and technology — always focused on real business impact.</p>
-      </div>
-      <div class="cards-grid">
-        <div class="feature-card">
-          <div class="feat-icon">
-            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Automation</h3>
-          <p>Journey orchestration using conditional logic, webhooks, and scalable personalization across email, push, SMS, and in-app channels.</p>
+      <p class="label section__eyebrow">How I work</p>
+      <h2 class="h1 section__title">Three pillars behind every project.</h2>
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar__accent pillar__accent--azure"></div>
+          <h3 class="pillar__title">Strategy & Funnel</h3>
+          <p class="pillar__text">I operate across every stage — acquisition, activation, retention, engagement, revenue, and referral — always tying the campaign to a business goal, not a vanity metric.</p>
         </div>
-        <div class="feature-card">
-          <div class="feat-icon">
-            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Campaigns</h3>
-          <p>End-to-end execution from planning to performance analysis — acquisition, activation, retention, and revenue-focused initiatives.</p>
+        <div class="pillar">
+          <div class="pillar__accent pillar__accent--navy"></div>
+          <h3 class="pillar__title">Automation & Execution</h3>
+          <p class="pillar__text">I orchestrate journeys with conditional logic, webhooks, and personalization at scale. From briefing to send logic, end to end.</p>
         </div>
-        <div class="feature-card">
-          <div class="feat-icon">
-            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2"/><path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Testing &amp; Analysis</h3>
-          <p>A/B testing with statistical rigor, uplift measurement, and dashboards aligned with key business KPIs.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feat-icon">
-            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Segmentation</h3>
-          <p>Advanced use of behavioral attributes and events for precise audience targeting across the full CRM funnel.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feat-icon">
-            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Product Analytics</h3>
-          <p>Deep experience with Amplitude and Metabase — translating product data into lifecycle marketing decisions.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feat-icon">
-            <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" stroke="currentColor" stroke-width="2"/></svg>
-          </div>
-          <h3>LatAm Markets</h3>
-          <p>Proven experience across Brazil, Mexico, Colombia, and Argentina — understanding local nuances that drive results.</p>
+        <div class="pillar">
+          <div class="pillar__accent pillar__accent--cyan"></div>
+          <h3 class="pillar__title">Data & Experimentation</h3>
+          <p class="pillar__text">A/B tests with statistical rigor, dashboards tied to business KPIs, and advanced segmentation by event and attribute. The bar is the data — not whoever argues loudest.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- RECENT EXPERIENCE -->
-  <section class="section section-alt">
+  <!-- STACK -->
+  <section class="section section--cloud">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Career</span>
-        <h2>Recent experience</h2>
-        <p>A quick snapshot of where I've been and what I've built.</p>
+      <p class="label section__eyebrow">Stack</p>
+      <div class="badge-row">
+        <span class="badge">Braze</span>
+        <span class="badge">Amplitude</span>
+        <span class="badge">HubSpot</span>
+        <span class="badge">Iterable</span>
+        <span class="badge">Segment</span>
+        <span class="badge">SQL</span>
+        <span class="badge">Metabase</span>
+        <span class="badge">Looker Studio</span>
+        <span class="badge">Power BI</span>
       </div>
-      <div class="timeline-mini">
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-body">
-            <div class="tl-date">2023 – Present</div>
-            <div class="tl-role">Senior CRM &amp; Lifecycle Marketing Analyst</div>
-            <div class="tl-company">Beyond Analytics / Afya</div>
-          </div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-body">
-            <div class="tl-date">2020 – 2023</div>
-            <div class="tl-role">Senior Marketing Analyst → CRM Lead</div>
-            <div class="tl-company">Qconcursos</div>
-          </div>
-        </div>
-        <div class="tl-item">
-          <div class="tl-dot"></div>
-          <div class="tl-body">
-            <div class="tl-date">2018 – 2020</div>
-            <div class="tl-role">Marketing &amp; Sales Analyst</div>
-            <div class="tl-company">Eadbox / Edools</div>
-          </div>
-        </div>
-      </div>
-      <a href="experience.html" class="btn btn-primary" style="margin-top: 2rem; display:inline-block;">Full experience →</a>
     </div>
   </section>
 
-  <!-- BLOG PREVIEW -->
+  <!-- FEATURED CASES -->
   <section class="section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">Blog</span>
-        <h2>Ideas &amp; perspectives</h2>
-        <p>Thoughts on CRM, lifecycle marketing, data, and the occasional random topic I feel like writing about.</p>
+      <p class="label section__eyebrow">Featured work</p>
+      <h2 class="h1 section__title">Case studies</h2>
+      <p class="section__sub">Real CRM projects: segmentation, automation, and journeys that drove measurable revenue.</p>
+      <div class="cases-grid">
+
+        <a href="cases.html#case-1" class="case-card">
+          <p class="label case-card__tag">Segmentation &middot; Audience</p>
+          <h3 class="case-card__headline">From raw event data to audience intelligence</h3>
+          <p class="case-card__sector">Healthtech/Edtech &middot; NASDAQ</p>
+          <div class="case-card__metric">
+            <div class="case-card__metric-number">2x</div>
+            <div class="case-card__metric-label">opportunity-to-sale conversion rate on a new lead base</div>
+          </div>
+          <div class="case-card__badges badge-row">
+            <span class="badge">Braze</span>
+            <span class="badge">Segment CDP</span>
+            <span class="badge">SQL</span>
+          </div>
+        </a>
+
+        <a href="cases.html#case-2" class="case-card">
+          <p class="label case-card__tag">Retention &middot; Revenue</p>
+          <h3 class="case-card__headline">The journey that became CRM's biggest revenue line</h3>
+          <p class="case-card__sector">B2C Edtech</p>
+          <div class="case-card__metric">
+            <div class="case-card__metric-number">R$3.8M</div>
+            <div class="case-card__metric-label">revenue &middot; 20% of total CRM revenue for the year</div>
+          </div>
+          <div class="case-card__badges badge-row">
+            <span class="badge">Iterable</span>
+            <span class="badge">WhatsApp</span>
+            <span class="badge">SQL</span>
+          </div>
+        </a>
+
       </div>
-      <div class="blog-preview-grid">
-        <a href="blog/post-1.html" class="blog-card">
-          <div class="blog-tag">CRM Strategy</div>
-          <h3>Why most companies fail at lifecycle marketing (and how to fix it)</h3>
-          <p>The most common mistake I see teams make — and the framework I use to think about the full customer journey.</p>
-          <span class="read-more">Read →</span>
-        </a>
-        <a href="blog/post-2.html" class="blog-card">
-          <div class="blog-tag">Automation</div>
-          <h3>The anatomy of a great onboarding journey</h3>
-          <p>Breaking down what separates a forgettable welcome sequence from one that actually converts and retains users.</p>
-          <span class="read-more">Read →</span>
-        </a>
-        <a href="blog/post-3.html" class="blog-card">
-          <div class="blog-tag">Data</div>
-          <h3>A/B testing: doing it right vs doing it fast</h3>
-          <p>How to design tests that give you real answers — not just numbers that look good in a presentation.</p>
-          <span class="read-more">Read →</span>
-        </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section--paper">
+    <div class="container">
+      <p class="label section__eyebrow">Contact</p>
+      <h2 class="h1 section__title">Let's talk.</h2>
+      <p class="section__sub">I'm open to both full-time CRM and Lifecycle Marketing roles and consulting engagements — stack audits, journey design, A/B testing setup, or focused campaign support. Tell me the context, and I'll get back to you with the right next step.</p>
+      <div class="contact">
+        <div>
+          <form id="contact-form" class="contact__form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" class="input" placeholder="Your name" required>
+            <input type="email" name="email" class="input" placeholder="you@email.com" required>
+            <input type="text" name="company" class="input" placeholder="Company (optional)">
+            <textarea name="message" class="input" placeholder="What do you need?" required></textarea>
+            <button type="submit" class="btn btn--primary">Send message &rarr;</button>
+          </form>
+          <div id="form-success" class="form-success">Message sent. I'll get back to you soon.</div>
+        </div>
+        <div class="contact__channels">
+          <div class="contact__channel">
+            <span class="contact__channel-label">Email</span>
+            <a href="mailto:aronhenriquez@gmail.com">aronhenriquez@gmail.com</a>
+          </div>
+          <div class="contact__channel">
+            <span class="contact__channel-label">LinkedIn</span>
+            <a href="https://linkedin.com/in/aronhenriquez-crm-lifecycle" target="_blank" rel="noopener">/in/aronhenriquez-crm-lifecycle</a>
+          </div>
+          <div class="contact__channel">
+            <span class="contact__channel-label">Phone</span>
+            <span>+55 21 99928-1147</span>
+          </div>
+          <div class="contact__channel">
+            <span class="contact__channel-label">Location</span>
+            <span>Brazil &middot; Available remote</span>
+          </div>
+        </div>
       </div>
-      <a href="blog.html" class="btn btn-ghost" style="margin-top: 2rem; display:inline-block;">All posts →</a>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-left">
-          <a href="index.html" class="nav-logo">aron<span>.</span></a>
-          <p>CRM &amp; Lifecycle Marketing · Rio de Janeiro, Brazil</p>
-        </div>
-        <div class="footer-links">
-          <a href="about.html">About</a>
-          <a href="experience.html">Experience</a>
-          <a href="blog.html">Blog</a>
-          <a href="https://www.linkedin.com/in/aronhenriquez-crm-lifecycle/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2025 Aron Henriquez</span>
+    <div class="container footer__inner">
+      <span class="footer__copy">&copy; 2026 Aron Henriquez</span>
+      <div class="footer__links">
+        <a href="cases.html">Cases</a>
+        <a href="blog.html">Writing</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>

@@ -1,103 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog · Aron Henriquez</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writing — Aron Henriquez</title>
+  <meta name="description" content="Essays on lifecycle, experimentation, and data applied to CRM.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">aron<span>.</span></a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="blog.html" class="active">Blog</a></li>
-      </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__diamond"></span>
+        Aron Henriquez
+      </a>
+      <button class="nav__toggle" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
+      <div class="nav__links">
+        <a href="cases.html">Cases</a>
+        <a href="blog.html">Writing</a>
+        <a href="index.html#contact" class="btn btn--outline">Contact</a>
+      </div>
     </div>
   </nav>
 
-  <div class="page-hero">
+  <!-- PAGE HEADER -->
+  <header class="page-header">
     <div class="container">
-      <span class="section-tag">Blog</span>
-      <h1>Ideas &amp; perspectives</h1>
-      <p>Thoughts on CRM, lifecycle marketing, data, and the occasional random topic I feel like writing about. No newsletter. No schedule. Just writing when I have something worth saying.</p>
+      <p class="label page-header__eyebrow">Writing</p>
+      <h1 class="h1">Lifecycle, data, and what I'm learning along the way.</h1>
+      <p class="page-header__sub body-text">Short pieces on CRM, experimentation, and the behind-the-scenes of turning behavior into retention — no magic formula, just what worked (and what didn't).</p>
     </div>
-  </div>
+  </header>
 
-  <div class="container">
-    <div class="blog-content">
+  <!-- BLOG POSTS -->
+  <section class="section">
+    <div class="container">
       <div class="blog-grid">
 
-        <a href="blog/post-1.html" class="blog-card">
-          <div class="blog-tag">CRM Strategy</div>
-          <h3>Why most companies fail at lifecycle marketing (and how to fix it)</h3>
-          <p>The most common mistake I see teams make — and the framework I use to think about the full customer journey from acquisition to advocacy.</p>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
-            <span class="read-more">Read →</span>
-            <span style="font-size: 0.75rem; color: var(--gray-400);">May 2025</span>
+        <article class="blog-card">
+          <div class="blog-card__meta">
+            <span class="label blog-card__pillar">Lifecycle Strategy</span>
           </div>
-        </a>
+          <h2 class="blog-card__title">Why most lifecycle programs measure the wrong thing</h2>
+          <p class="blog-card__thesis">Open rate is vanity; incrementality is what pays the bills. How to set up the right bar.</p>
+          <span class="blog-card__link">Coming soon</span>
+        </article>
 
-        <a href="blog/post-2.html" class="blog-card">
-          <div class="blog-tag">Automation</div>
-          <h3>The anatomy of a great onboarding journey</h3>
-          <p>Breaking down what separates a forgettable welcome sequence from one that actually converts users and sets the foundation for long-term retention.</p>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
-            <span class="read-more">Read →</span>
-            <span style="font-size: 0.75rem; color: var(--gray-400);">April 2025</span>
+        <article class="blog-card">
+          <div class="blog-card__meta">
+            <span class="label blog-card__pillar">Automation</span>
           </div>
-        </a>
+          <h2 class="blog-card__title">Reverse-engineering 50+ flows without losing control</h2>
+          <p class="blog-card__thesis">How to structure an entire journey around AARRR without it turning into an undebuggable mess.</p>
+          <span class="blog-card__link">Coming soon</span>
+        </article>
 
-        <a href="blog/post-3.html" class="blog-card">
-          <div class="blog-tag">Data</div>
-          <h3>A/B testing: doing it right vs doing it fast</h3>
-          <p>How to design experiments that give you real, actionable answers — not just numbers that look good in a presentation but teach you nothing.</p>
-          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
-            <span class="read-more">Read →</span>
-            <span style="font-size: 0.75rem; color: var(--gray-400);">March 2025</span>
+        <article class="blog-card">
+          <div class="blog-card__meta">
+            <span class="label blog-card__pillar">Data & Experimentation</span>
           </div>
-        </a>
+          <h2 class="blog-card__title">What "statistically significant" actually means</h2>
+          <p class="blog-card__thesis">And the 3 most common ways an A/B test lies to you.</p>
+          <span class="blog-card__link">Coming soon</span>
+        </article>
 
-      </div>
+        <article class="blog-card">
+          <div class="blog-card__meta">
+            <span class="label blog-card__pillar">Data & Experimentation</span>
+          </div>
+          <h2 class="blog-card__title">Event-based vs. attribute-based segmentation: when to use each</h2>
+          <p class="blog-card__thesis">A practical guide to ditching gut-feel segmentation.</p>
+          <span class="blog-card__link">Coming soon</span>
+        </article>
 
-      <div style="margin-top: 4rem; padding: 2.5rem; background: var(--blue-50); border: 1px solid var(--blue-100); border-radius: var(--radius-lg); text-align: center;">
-        <h3 style="font-family: var(--font-display); font-size: 1.4rem; color: var(--gray-900); margin-bottom: 0.75rem;">More posts coming soon</h3>
-        <p style="color: var(--gray-600); font-size: 0.9rem; max-width: 440px; margin: 0 auto;">I write when I have something worth saying. Follow me on LinkedIn to know when new posts go up.</p>
-        <a href="https://www.linkedin.com/in/aronhenriquez-crm-lifecycle/" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 1.5rem;">Connect on LinkedIn ↗</a>
+        <article class="blog-card">
+          <div class="blog-card__meta">
+            <span class="label blog-card__pillar">Stack & Tooling</span>
+          </div>
+          <h2 class="blog-card__title">WhatsApp as a revenue channel: what R$1.5M in a single flow taught me</h2>
+          <p class="blog-card__thesis">Lessons from a still-underrated B2C CRM channel.</p>
+          <span class="blog-card__link">Coming soon</span>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card__meta">
+            <span class="label blog-card__pillar">Career</span>
+          </div>
+          <h2 class="blog-card__title">Junior to senior in CRM: what I'd do differently</h2>
+          <p class="blog-card__thesis">A reflection on 4 years of growth in the role, minus the LinkedIn clich&eacute;.</p>
+          <span class="blog-card__link">Coming soon</span>
+        </article>
+
       </div>
     </div>
-  </div>
+  </section>
 
-  <footer class="footer">
+  <!-- CTA -->
+  <section class="section section--dark" style="text-align: center; padding: 4rem 0;">
     <div class="container">
-      <div class="footer-inner">
-        <div class="footer-left">
-          <a href="index.html" class="nav-logo">aron<span>.</span></a>
-          <p>CRM &amp; Lifecycle Marketing · Rio de Janeiro, Brazil</p>
-        </div>
-        <div class="footer-links">
-          <a href="about.html">About</a>
-          <a href="experience.html">Experience</a>
-          <a href="blog.html">Blog</a>
-          <a href="https://www.linkedin.com/in/aronhenriquez-crm-lifecycle/" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2025 Aron Henriquez</span>
+      <h2 class="h1" style="color: #fff; margin-bottom: 1rem;">Want to discuss a topic?</h2>
+      <p style="color: var(--steel); margin-bottom: 2rem; max-width: 45ch; margin-left: auto; margin-right: auto;">If something here resonated or you disagree — I'd like to hear it.</p>
+      <a href="index.html#contact" class="btn btn--primary">Get in touch &rarr;</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="footer__copy">&copy; 2026 Aron Henriquez</span>
+      <div class="footer__links">
+        <a href="cases.html">Cases</a>
+        <a href="blog.html">Writing</a>
+        <a href="index.html#contact">Contact</a>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
